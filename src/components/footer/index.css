@@ -1,0 +1,49 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    height: 25vh;
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+}
+
+.contact-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+}
+
+.contact-footer a {
+    margin: 10px
+}
+
+.follow-me {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.follow-me a {
+    margin: 10px;
+}
+
+.creator {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.creator img {
+    margin-top: 10px;
+}
+
+.creator-logo {
+    height: 10vh;
+}
