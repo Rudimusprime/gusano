@@ -8,9 +8,11 @@ const About = () => {
     return (
         <Router>
             <div className="about">
-                <img alt=""
-                     className="about-logo"
-                     src={gusanoLogo}/>
+                <section className="gusano-logo">
+                    <img alt=""
+                         className="about-logo"
+                         src={gusanoLogo}/>
+                </section>
                 <section className="about-me">
                     <img alt=""
                          className="avatar"
@@ -23,7 +25,6 @@ const About = () => {
                         konstrukcji.
                     </p>
                 </section>
-
             </div>
         </Router>
     );

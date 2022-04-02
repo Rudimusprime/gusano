@@ -1,33 +1,42 @@
-.graphics{
-    margin: 0 auto 0 auto;
-    display: flex;
-    flex-direction: column;
-    max-width: 70vw;
-}
-.redmotion, .hairless-horseman, .motorcycles-barbershop, .bambee{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 2.5%;
-}
-.redmotion-logo, .hairless-horseman-logo, .motorcycles-barbershop-logo, .bambee-logo{
-    width: 20vw;
-}
-.redmotion-history, .hairless-horseman-history, .motorcycles-barbershop-history, .bambee-history{
-    width: 20vw;
-}
-.redmotion-description p, .hairless-horseman-description p, .motorcycles-barbershop-description p, .bambee-description p{
-    display: flex;
-    flex-direction: column;
-    width: 30vw;
-    margin: 15px;
-    font-size: 22px;
-}
-.other-works{
-    display: flex;
-    flex-direction: row;
-}
-.other-works img{
-    width: 20%;
+@media all and (min-width: 260px) {
+    .graphics {
+        margin: 0 auto 0 auto;
+        display: flex;
+        flex-direction: column;
+        max-width: 80vw;
+    }
+
+    .redmotion, .hairless-horseman, .motorcycles-barbershop, .bambee {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 2.5%;
+    }
+
+    .redmotion-logo, .hairless-horseman-logo, .motorcycles-barbershop-logo, .bambee-logo {
+        width: 40vw;
+    }
+
+    .redmotion-history, .hairless-horseman-history, .motorcycles-barbershop-history, .bambee-history {
+        width: 20vw;
+        display: none;
+    }
+
+    .redmotion-description p, .hairless-horseman-description p, .motorcycles-barbershop-description p, .bambee-description p {
+        display: none;
+        flex-direction: column;
+        width: 30vw;
+        margin: 15px;
+        font-size: 22px;
+    }
+
+    .other-works {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .other-works img {
+        width: 20%;
+    }
 }

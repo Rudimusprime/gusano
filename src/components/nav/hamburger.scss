@@ -1,10 +1,10 @@
 .hamburger {
   margin: 0;
-  padding: 0;
+  padding: 7px;
   border: 0;
-  background-color: transparent;
+  background-color: #1D160F;
   cursor: pointer;
-
+  border-radius: 7px;
   &:focus {
     & > .hamburger__container {
       box-shadow: 0 0 2px 2px #51a7e8;
@@ -70,6 +70,39 @@
         transition: bottom 100ms ease-out,
         transform 220ms 120ms ease-in-out;
       }
+    }
+  }
+}
+
+nav {
+  display: none;
+}
+
+.nav-links {
+  height: 7vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5% 0 5%;
+  transition: height 0.5s cubic-bezier(0.77,0.2,0.05,1.0);;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 10px 36px 0, rgba(0, 0, 0, 0.06) 0 0 0 1px;
+
+  &--active {
+    height: 35vh;
+    transition: height 0.5s cubic-bezier(0.77,0.2,0.05,1.0);;
+
+    nav {
+      display: flex;
+    }
+
+    &::before {
+
+    }
+
+    &::after {
+
     }
   }
 }

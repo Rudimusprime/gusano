@@ -12,24 +12,28 @@ const Footer = () => {
             <section className="footer">
                 <div className="contact-footer">
                     <h3>kontakt</h3>
+                    <div className="contact">
                     <a href="tel:+48 607 381 939">
                         <FontAwesomeIcon icon={faMobileAlt}/>+48 607 381 939
                     </a>
                     <a href='mailto:kontakt@gusano.pl'>
                         <FontAwesomeIcon icon={faEnvelope}/>kontakt@gusano.pl
                     </a>
+                    </div>
                 </div>
                 <div className="follow-me">
                     <h3>zaobserwuj mnie</h3>
-                    <a href="https://www.behance.net/maciejjot55c0"
-                       target="_blank">
-                        <FontAwesomeIcon icon={faBehanceSquare}/>
-                    </a>
-                    <a href="https://www.facebook.com/Maciej.JotJanczak"
-                       target="_blank">
-                        <i className="fab fa-facebook-square"/>
-                        <FontAwesomeIcon icon={faFacebookSquare}/>
-                    </a>
+                    <div className="links">
+                        <a href="https://www.behance.net/maciejjot55c0"
+                           target="_blank">
+                            <FontAwesomeIcon icon={faBehanceSquare}/>
+                        </a>
+                        <a href="https://www.facebook.com/Maciej.JotJanczak"
+                           target="_blank">
+                            <i className="fab fa-facebook-square"/>
+                            <FontAwesomeIcon icon={faFacebookSquare}/>
+                        </a>
+                    </div>
                 </div>
                 <div className="creator">
                     <h3>wykonawca</h3>

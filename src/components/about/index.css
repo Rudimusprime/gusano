@@ -1,30 +1,36 @@
-.about {
-    display: flex;
-    flex-direction: column;
-    height: 200vh;
-    justify-content: space-around;
-}
+@media all and (min-width: 260px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        height: 200vh;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .gusano-logo{
+        height: 100vh;
+    }
+    .about-logo {
+        margin-top: 50%;
+        height: 45vh;
+    }
 
-.about-logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 45vh;
-    margin-top: 10vh;
-}
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100vh;
+        margin-top: 7vh;
+    }
 
-.about-me {
-    display: flex;
-    align-items: center;
-}
+    section .avatar {
+        margin-left: 7%;
+        height: 65vh;
+    }
 
-section .avatar {
-    height: 60vh;
-    margin-left: 20%;
-    margin-top: 5%;
-}
-
-section .description {
-    width: 45vw;
-    font-size: 24px;
+    section .description {
+        font-size: 18px;
+        width: 90vw;
+        height: 35vh;
+    }
 }
