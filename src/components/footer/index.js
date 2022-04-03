@@ -14,10 +14,10 @@ const Footer = () => {
                     <h3>kontakt</h3>
                     <div className="contact">
                     <a href="tel:+48 607 381 939">
-                        <FontAwesomeIcon icon={faMobileAlt}/>+48 607 381 939
+                        <FontAwesomeIcon icon={faMobileAlt}/> Zadzwoń do mnie!
                     </a>
                     <a href='mailto:kontakt@gusano.pl'>
-                        <FontAwesomeIcon icon={faEnvelope}/>kontakt@gusano.pl
+                        <FontAwesomeIcon icon={faEnvelope}/> Wyślij e-mail
                     </a>
                     </div>
                 </div>

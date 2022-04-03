@@ -18,14 +18,14 @@ const Navigation = () => {
                          className="navbar-logo"
                          src={navBarLogo}/>
                 </a>
-                <button className={`hamburger ${isActive ? "hamburger" : "hamburger--active"}`}
+                <button className={`hamburger ${isActive ? "" : "hamburger--active"}`}
                         aria-label="Menu"
                         onClick={ToggleClass}>
                 <span className="hamburger__container" tabIndex="-1">
                   <span className="hamburger__bars"></span>
                 </span>
                 </button>
-                    <nav className={`nav ${isActive ? "nav" : "nav--active"}`}>
+                    <nav className={`nav ${isActive ? "" : "nav--active"}`}>
                         <ul>
                             <li>
                                 <a href="#about">o mnie</a>
