@@ -1,3 +1,6 @@
+header{
+  max-width: 1280px;
+}
 a:hover{
   color: aqua;
 }
@@ -195,7 +198,7 @@ a:hover{
     top: 0;
     left: 0;
     width: 100vw;
-    height: 7vh;
+    height: 5vh;
     padding: 0 5% 0 5%;
     box-shadow: rgba(0, 0, 0, 0.16) 0 10px 36px 0, rgba(0, 0, 0, 0.06) 0 0 0 1px;
     background-color: #1D160F;
@@ -206,7 +209,9 @@ a:hover{
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    height: 7vh;
+    height: 5vh;
+    max-width: 1280px;
+    margin: 0 auto;
   }
   nav ul li {
     list-style: none;
@@ -216,15 +221,7 @@ a:hover{
   nav ul li a {
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 3vh;
+    font-size: 2vh;
     color: #E5E5D9;
-  }
-
-  .navbar-logo {
-    height: 5vh;
-    position: absolute;
-    top: 1vh;
-    left: 2vh;
-    display: block;
   }
 }

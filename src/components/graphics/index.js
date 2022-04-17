@@ -16,6 +16,67 @@ import heeresCoffe from "../../images/heeres coffe.svg"
 import pb from "../../images/pb.svg"
 import scaryShop from "../../images/scary shop.svg"
 import './index.css';
+import Gallery from 'react-grid-gallery';
+import Gibson1 from "../../images/optimalized/1973_Gibson_Les_Paul_Custom_Iron_Cross_Hetfield_Maciej_Janczak.jpg"
+import Gibson2 from "../../images/optimalized/1973_Gibson_Les_Paul_Custom_Iron_Cross_Maciej_Janczak.jpg"
+import AntonieDeSaint
+    from "../../images/optimalized/Antoine_de_Saint-Exupéry_Mały_Książę_Okładka_Cover_Maciej_Jańczak_2-kopia.jpg"
+import ButelkaKwadratowa from "../../images/optimalized/Butelka-kwadratowa---Technologia-500ml.jpg"
+import CylinderVanTroffaZajdae
+    from "../../images/optimalized/Cylinder_Van_Troffa_Zajdae_Okładka_Cover_Maciej_Jańczak-kopia.jpg"
+import Grecja from "../../images/optimalized/Grecja-Maciej-Jańczak-2.jpg"
+import HeeresCoffeLogo from "../../images/optimalized/Heere_s-Coffee-logo-Maciej-Janczak_4.jpg"
+import InfografikaCiesielka from "../../images/optimalized/Infografika-CIESIELKA.jpg"
+import InfografikaCiesielkaTradycja from "../../images/optimalized/Infografika-Ciesielka---tradycja2.jpg"
+import InfografikaFink from "../../images/optimalized/Infografika-FINK.jpg"
+import KowalBezskrzydly from "../../images/optimalized/Kowal-bezskrzydły-Robak-Bug-Maciej-Jańczak.jpg"
+
+const images = [{
+    src: Gibson1,
+    thumbnail: Gibson1,
+    caption: "1973 Gibson Les Paul Custom Iron Cross Hetfield"
+}, {
+    src: Gibson2,
+    thumbnail: Gibson2,
+    caption: "1973 Gibson Les Paul Custom Iron Cross"
+}, {
+    src: AntonieDeSaint,
+    thumbnail: AntonieDeSaint,
+    caption: "Antoine de Saint Exupéry Mały Książę okładka cover"
+}, {
+    src: ButelkaKwadratowa,
+    thumbnail: ButelkaKwadratowa,
+    caption: "Butelka Kwadratowa"
+}, {
+    src: CylinderVanTroffaZajdae,
+    thumbnail: CylinderVanTroffaZajdae,
+    caption: "Cylinder Van Troffa Zajdae okładka cover"
+}, {
+    src: Grecja,
+    thumbnail: Grecja,
+    caption: "Grecja"
+}, {
+    src: HeeresCoffeLogo,
+    thumbnail: HeeresCoffeLogo,
+    caption: "Heere's Coffe logo"
+}, {
+    src: InfografikaCiesielka,
+    thumbnail: InfografikaCiesielka,
+    caption: "Infografika ciesielka"
+}, {
+    src: InfografikaCiesielkaTradycja,
+    thumbnail: InfografikaCiesielkaTradycja,
+    caption: "Infografika ciesielka tradycja"
+}, {
+    src: InfografikaFink,
+    thumbnail: InfografikaFink,
+    caption: "Infografika"
+}, {
+    src: KowalBezskrzydly,
+    thumbnail: KowalBezskrzydly,
+    caption: "Kowal bezskrzydły"
+},
+]
 
 const Graphics = () => {
     return (
@@ -31,10 +92,6 @@ const Graphics = () => {
                             fotograficzne, usługi wideo oraz zajmuje się projektowaniem stron internetowych </p>
                         <p>zostałem poproszony o stworzenie logo na bazie dwóch elementów:
                             symbolu rejestracji wideo i płynnego ruchu</p>
-                        <p>red motion is a company that mainly deals with car photography, but also provides general
-                            photography services, video services and website design</p>
-                        <p>I was asked to create a logo based on two elements:
-                            video recording and smooth motion symbol</p>
                     </div>
                     <img src={redmotionLogoHistory}
                          className="redmotion-history"
@@ -51,10 +108,6 @@ const Graphics = () => {
                             punktem wyjścia była sylwetka motocykla i odręczny font</p>
                         <p>w następnej kolejności powstało logo z tą samą nazwą, ale przeznaczone do opakowań
                             kosmetyków</p>
-                        <p>hairless horseman is a hairdressing wholesaler offering carefully selected hair and beard
-                            care products</p>
-                        <p>I was asked to create a logo for a hairdressing wholesaler
-                            the starting point was the silhouette of a motorcycle and a handwritten font</p>
                     </div>
                     <div className="hairless-horseman-history">
                         <img src={hairlessHorsemanLogoSketch1}
@@ -76,11 +129,6 @@ const Graphics = () => {
                         <p>zostałem poproszony o stworzenie logo na bazie kilku elementów:
                             znaku road66, motocylka, akcesoriów fryzjerskich
                             oraz indiwidualnego fontu</p>
-                        <p>motorcycles barbershop is a place created with passion for hairdressing and motorcycles. The
-                            toughest guys who need a moment of relaxation meet here before they move on</p>
-                        <p>I was asked to create a logo based on several elements:
-                            road66 mark, a motorcycle, hairdressing accessories and
-                            an individual font</p>
                     </div>
                     <div className="motorcycles-barbershop-history">
                         <img src={motorcyclesBarberShopLogoHistory}
@@ -107,6 +155,11 @@ const Graphics = () => {
                              alt=""/>
                     </div>
                 </section>
+                <Gallery images={images}
+                         enableImageSelection={false}
+                         backdropClosesModal={true}
+                         margin={5}
+                         rowHeight={225}/>
                 <section className="other-works">
                     <img src={ajmal}
                          className="ajmal"

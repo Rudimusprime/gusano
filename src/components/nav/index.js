@@ -3,18 +3,16 @@ import {BrowserRouter as Router} from "react-router-dom";
 import navBarLogo from "../../images/nav-bar logo.svg";
 import './index.scss';
 import {
-    ScrollingProvider,
     useScrollSection,
-    Section,
 } from 'react-scroll-section';
 
 const Navigation = () => {
     const [isActive, setActive] = useState("false");
 
-        const aboutSection = useScrollSection('about');
-        const graphicsSection = useScrollSection('graphics');
-        const sketchSection = useScrollSection('sketch');
-        const contactSection = useScrollSection('contact');
+    const aboutSection = useScrollSection('about');
+    const graphicsSection = useScrollSection('graphics');
+    const sketchSection = useScrollSection('sketch');
+    const contactSection = useScrollSection('contact');
     const ToggleClass = () => {
         setActive(!isActive);
 
@@ -23,11 +21,6 @@ const Navigation = () => {
 
         <Router>
             <header>
-                {/*<a href="#">*/}
-                {/*    <img alt=""*/}
-                {/*         className="navbar-logo"*/}
-                {/*         src={navBarLogo}/>*/}
-                {/*</a>*/}
                 <button className={`hamburger ${isActive ? "" : "hamburger--active"}`}
                         aria-label="Menu"
                         onClick={ToggleClass}>

@@ -2,18 +2,9 @@
     .about {
         display: flex;
         flex-direction: column;
-        height: 200vh;
+        height: 100vh;
         justify-content: space-around;
         align-items: center;
-    }
-
-    .gusano-logo {
-        height: 100vh;
-    }
-
-    .about-logo {
-        margin-top: 50%;
-        height: 55vh;
     }
 
     .about-me {
@@ -21,35 +12,38 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        height: 100vh;
-        margin-top: 7vh;
+        margin-top: 25vh;
     }
 
     section .avatar {
         margin-left: 7%;
-        height: 65vh;
+        height: 60vh;
     }
 
     section .description {
-        font-size: 18px;
+        font-size: 16px;
         width: 90vw;
-        height: 35vh;
+        height: 40vh;
     }
 }
 
 @media all and (min-width: 500px) and (orientation: landscape) {
     section .description {
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 
 @media all and (min-width: 700px) {
     section .description {
-        font-size: 28px;
+        font-size: 22px;
     }
 }
 @media all and (min-width: 1200px) and (orientation: landscape){
+    .about-me{
+        max-width: 1280px;
+    }
     section .description{
+        max-width: 70%;
         font-size: 32px;
     }
 }

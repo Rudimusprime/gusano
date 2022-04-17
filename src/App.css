@@ -1,7 +1,7 @@
-@import url("https://use.typekit.net/hzw4iqp.css");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 * {
-    font-family: proxima-nova-condensed, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-style: normal;
     padding: 0;
@@ -10,6 +10,17 @@
 }
 
 main {
-    max-width: 1920px;
     margin: 0 auto;
+    max-width: 1280px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.gusano-logo {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.about-logo {
+    margin-top: 25vh;
+    height: 55vh;
 }

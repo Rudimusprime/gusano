@@ -1,6 +1,5 @@
 import React from 'react';
 import {BrowserRouter as Router} from "react-router-dom";
-import gusanoLogo from "../../images/about logo.svg";
 import gusanoOwner from "../../images/gusanoOwner.svg";
 import './index.css';
 
@@ -8,11 +7,6 @@ const About = () => {
     return (
         <Router>
             <div className="about">
-                <section className="gusano-logo">
-                    <img alt=""
-                         className="about-logo"
-                         src={gusanoLogo}/>
-                </section>
                 <section className="about-me">
                     <img alt=""
                          className="avatar"
