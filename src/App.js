@@ -1,7 +1,9 @@
 import './App.css';
 import Navigation from "./components/nav";
 import About from "./components/about";
+import Logo from "./components/logo";
 import Graphics from "./components/graphics";
+import Sketch from "./components/sketch";
 import Footer from "./components/footer";
 import gusanoLogo from "../src/images/about logo.svg"
 import {
@@ -25,8 +27,14 @@ function App() {
                     <Section id="about">
                         {<About/>}
                     </Section>
+                    <Section id="logo">
+                        {<Logo/>}
+                    </Section>
                     <Section id="graphics">
                         {<Graphics/>}
+                    </Section>
+                    <Section id="sketch">
+                        {<Sketch/>}
                     </Section>
                     <Section id="contact">
                         {<Footer/>}

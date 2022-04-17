@@ -10,6 +10,7 @@ const Navigation = () => {
     const [isActive, setActive] = useState("false");
 
     const aboutSection = useScrollSection('about');
+    const logoSection = useScrollSection('logo');
     const graphicsSection = useScrollSection('graphics');
     const sketchSection = useScrollSection('sketch');
     const contactSection = useScrollSection('contact');
@@ -32,6 +33,9 @@ const Navigation = () => {
                     <ul>
                         <li>
                             <a onClick={aboutSection.onClick} selected={aboutSection.selected}>o mnie</a>
+                        </li>
+                        <li>
+                            <a onClick={logoSection.onClick} selected={logoSection.selected}>logo</a>
                         </li>
                         <li>
                             <a onClick={graphicsSection.onClick} selected={graphicsSection.selected}>grafika</a>
