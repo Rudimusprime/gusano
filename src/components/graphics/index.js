@@ -146,7 +146,7 @@ const graphics = [{
 const Graphics = () => {
     return (
         <Router>
-            <div className="graphics">
+            <div className="sketch">
                 <Gallery images={graphics}
                          enableImageSelection={false}
                          backdropClosesModal={true}

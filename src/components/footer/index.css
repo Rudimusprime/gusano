@@ -2,7 +2,7 @@ footer{
     max-width: 1280px;
 }
 .footer a:hover{
-    color: aqua;
+    color: #7BA3AB;
 }
 @media all and (min-width: 260px) {
     .footer {
@@ -12,7 +12,7 @@ footer{
         justify-items: center;
         height: 75vh;
         color: white;
-        background-color: #1D160F;
+        background-color: #6c757d;
     }
 
     .footer h3 {
@@ -49,7 +49,7 @@ footer{
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        background-color: #35271c;
+        background-color: #495057;
         height: 33%;
     }
 
@@ -110,7 +110,7 @@ footer{
         align-items: start;
         height: 20vh;
         color: white;
-        background-color: #1D160F;
+        background-color: #6c757d;
     }
 
     .footer h3 {
@@ -148,7 +148,7 @@ footer{
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        background-color: #35271c;
+        background-color: #495057;
         width: 34%;
         height: 20vh;
     }
